@@ -1,5 +1,4 @@
 /*    NOTES FOR WHOEVER ENDS UP WITH MY LOOSE ENDS:
-
 I am sorry that I didn't get as much done as discussed. I had to do a pretty significant refactor to pass the grids as objects (which makes eventlisteners more mobile and made rendering ships pretty easy.)
 Event Listeners for buttons are not coded (I think you wanted to do it separately Logan?)
 render needs to be handed blank data in the DOMCONTENTLOADED eventlistener. It isn't right now.
@@ -8,9 +7,7 @@ that stuff should have to happen in the event listener
 startScreen is unfinished, as I didn't even get close to rotate. 
 the Fire eventlistener needs to be the thing to call switchTurn and update data and such (imo)
 If you have any questions, have dom text me. I won't be looking at discord, but if its urgent I can try to help
-
 -Gage
-
 */
 
 //adapted from https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images
