@@ -319,6 +319,7 @@ function rightsideClickEventRegister() {
                     switchPlayers("game");
                 }
             }
+	}
     })
 }
 
