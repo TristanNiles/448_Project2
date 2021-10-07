@@ -365,29 +365,29 @@ function drawGrid(context, grid) {
  * @param {Object} grid - grid variable
  * @param {boolean} ownShips - variable for tracking your own ships
  */
-function renderShips(context, arr, grid, ownShips)
-{
-    drawGrid(context, grid);
-    for (let i=0; i < 90; i++)
-    {
-        if (arr[i] == 0)
-        {
-            
-        }
-        else if (arr[i] == 1 && ownShips)
-        {
-            context.fillStyle = "Grey";
-            context.fillRect(grid.rightmost + ((grid.totalwidth/10) /4 ) + (grid.totalwidth/10)*unflattenX(i) , grid.heightmost + ((grid.totalheight/10) /4 ) +  (grid.totalheight/9)*unflattenY(i), (grid.totalheight/10)/2, (grid.totalheight/9)/2 );
-        }
-        else if (arr[i] == 2)
-        {
-            context.fillStyle = "Red";
-            context.fillRect(grid.rightmost + ((grid.totalwidth/10) /4 ) + (grid.totalwidth/10)*unflattenX(i) , grid.heightmost + ((grid.totalheight/10) /4 ) +  (grid.totalheight/9)*unflattenY(i), (grid.totalheight/10)/2, (grid.totalheight/9)/2 );
-        }
-        else if (arr[i] == 3)
-        {
-            context.fillStyle = "Blue";
-            context.fillRect(grid.rightmost + ((grid.totalwidth/10) /4 ) + (grid.totalwidth/10)*unflattenX(i) , grid.heightmost + ((grid.totalheight/10) /4 ) +  (grid.totalheight/9)*unflattenY(i), (grid.totalheight/10)/2, (grid.totalheight/9)/2 );
-        }
-    }
-}
+ function renderShips(context, arr, grid, ownShips)
+ {
+     drawGrid(context, grid);
+     for (let i=0; i < 90; i++)
+     {
+         if (arr[i] == 0)
+         {
+             
+         }
+         else if ((arr[i] == 1 || arr[i] == 2 || arr[i] == 3 ||arr[i] == 4 || arr[i] == 5 || arr[i] == 6) && ownShips)
+         {
+             context.fillStyle = "Grey";
+             context.fillRect(grid.rightmost + ((grid.totalwidth/10) /4 ) + (grid.totalwidth/10)*unflattenX(i) , grid.heightmost + ((grid.totalheight/10) /4 ) +  (grid.totalheight/9)*unflattenY(i), (grid.totalheight/10)/2, (grid.totalheight/9)/2 );
+         }
+         else if (arr[i] == 7)
+         {
+             context.fillStyle = "Red";
+             context.fillRect(grid.rightmost + ((grid.totalwidth/10) /4 ) + (grid.totalwidth/10)*unflattenX(i) , grid.heightmost + ((grid.totalheight/10) /4 ) +  (grid.totalheight/9)*unflattenY(i), (grid.totalheight/10)/2, (grid.totalheight/9)/2 );
+         }
+         else if (arr[i] == 8)
+         {
+             context.fillStyle = "Blue";
+             context.fillRect(grid.rightmost + ((grid.totalwidth/10) /4 ) + (grid.totalwidth/10)*unflattenX(i) , grid.heightmost + ((grid.totalheight/10) /4 ) +  (grid.totalheight/9)*unflattenY(i), (grid.totalheight/10)/2, (grid.totalheight/9)/2 );
+         }
+     }
+ }
