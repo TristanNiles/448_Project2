@@ -310,11 +310,11 @@ function rightsideClickEventRegister() {
                 } else {
                     switchPlayers("game");
                 }
-            } else if (g_currentPlayer == 2 && fireMed(g_player1arr)){
+            } /*else if (g_currentPlayer == 2 && fireMed(g_player1arr)){
                 console.log('current player is 2');
                 if (winCheck(g_player1arr)) {
                     g_winner = 2;
-                    g_mode = "win";
+                    g_mode = "win"; */
                 } else {
                     switchPlayers("game");
                 }
