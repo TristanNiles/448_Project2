@@ -158,7 +158,7 @@ function fireHard(arr) {
     }
 }
 
-function fireMed(arr) {
+/*function fireMed(arr) {
 	
 	if (arr[g_lastMove] == 7 && g_firstHit == '\0') { //if the last move was a hit and we have not already hit a ship that we have not sunk
 		g_firstHit = g_lastMove;
