@@ -348,8 +348,8 @@ function centerClickEventRegister() {
             if(pos.x > 20 && pos.x < 170 && pos.y > 20 && pos.y < 120){
             }
             else if(pos.x > 190 && pos.x < 340 && pos.y > 20 && pos.y < 120){
-		g_opponent = 'medium';
-		g_mode = 'start';
+		/*g_opponent = 'medium';
+		g_mode = 'start';*/
             }
             else if(pos.x > 360 && pos.x < 510 && pos.y > 20 && pos.y < 120){
                 g_opponent = 'hard';
