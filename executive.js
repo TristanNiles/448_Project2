@@ -308,7 +308,7 @@ function fireHard(arr) {
 
 	g_lastMove = g_currentMove;
 	
-}
+}*/
 
 tryFireDirection(arr, fromPos, direction) {
 	let max;
@@ -342,7 +342,7 @@ tryFireDirection(arr, fromPos, direction) {
 	}
 	
 	return false;
-}*/
+}
 
 /**
  * @desc This function places ships
