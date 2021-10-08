@@ -19,7 +19,7 @@ function gameplayLoop() {
             }
         }
     }
-    if (g_mode == "start" && g_opponent == "hard") {
+    if (g_mode == "start" && (g_opponent == "hard" || g_opponent = "medium")) {
         if (AI == 1){
             if (g_currentPlayer == 1) {
                 renderPlacementScreen(g_context, g_canvas, placeShip(g_player1arr, g_mousePos, g_currShipLength, g_currShipRotation));
