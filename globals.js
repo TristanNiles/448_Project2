@@ -274,7 +274,7 @@ function rightsideClickEventRegister() {
                 }
             }
         }
-        else if(g_opponent == "hard"){
+        else if(g_opponent == "hard" || g_opponent == "medium"){
             if (g_currentPlayer == 1 && fire(g_player2arr, flatten(i,j))) {
                 console.log('current player is 1');
                 console.log(g_player1arr, g_player2arr)
@@ -284,7 +284,7 @@ function rightsideClickEventRegister() {
                 } else {
                     switchPlayers("game");
                 }
-            } else if (g_currentPlayer == 2 && fireHard(g_player1arr)){
+            } else if (g_currentPlayer == 2 &&  ( ( fireHard(g_player1arr) && g_opponent == "hard") || (firemed(g_player1arr) && g_opponent == "medium"))){
                 console.log('current player is 2');
                 if (winCheck(g_player1arr)) {
                     g_winner = 2;
