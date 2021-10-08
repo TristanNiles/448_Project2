@@ -15,11 +15,6 @@ let g_potMove = '';
 let g_hit = false;
 let AI = 1;
 
-let g_firstHit = '\0';
-let g_lastMove = '\0';
-let g_currentMove = '\0';
-let g_sunkShipsByAI = 0;
-
 let g_opponent = '';
 
 //taken from https://github.com/gsburmaster/Connect4
@@ -299,27 +294,6 @@ function rightsideClickEventRegister() {
                 }
             }
         }
-		/*else if (g_opponent == "medium") {
-		//copied from above for hard
-			if (g_currentPlayer == 1 && fire(g_player2arr, flatten(i,j))) {
-                console.log('current player is 1');
-                console.log(g_player1arr, g_player2arr)
-                if (winCheck(g_player2arr)) {
-                    g_winner = 1;
-                    g_mode = "win";
-                } else {
-                    switchPlayers("game");
-                }
-            } else if (g_currentPlayer == 2 && fireMed(g_player1arr)){
-                console.log('current player is 2');
-                if (winCheck(g_player1arr)) {
-                    g_winner = 2;
-                    g_mode = "win"; 
-                } else {
-                    switchPlayers("game");
-                }
-            }
-	}*/
     })
 }
 
@@ -348,8 +322,6 @@ function centerClickEventRegister() {
             if(pos.x > 20 && pos.x < 170 && pos.y > 20 && pos.y < 120){
             }
             else if(pos.x > 190 && pos.x < 340 && pos.y > 20 && pos.y < 120){
-		/*g_opponent = 'medium';
-		g_mode = 'start';*/
             }
             else if(pos.x > 360 && pos.x < 510 && pos.y > 20 && pos.y < 120){
                 g_opponent = 'hard';
