@@ -158,7 +158,7 @@ function fireHard(arr) {
     }
 }
 
-/*function fireMed(arr) {
+function fireMed(arr) {
 	
 	if (arr[g_lastMove] == 7 && g_firstHit == '\0') { //if the last move was a hit and we have not already hit a ship that we have not sunk
 		g_firstHit = g_lastMove;
@@ -182,7 +182,7 @@ function fireHard(arr) {
 	if (g_firstHit == '\0') { //if there was no previous hit that did not already sink a ship
 		do {
 			g_currentMove = Math.random()*(arr.length-1); //randomize position of hit
-		} while (!fire(arr, g_currentMove)) //until the move is valid
+		} while (!fire(arr, g_currentMove)); //until the move is valid
 		g_lastMove = g_currentMove;
 		return true;
 	}
